@@ -16,14 +16,13 @@
         <button type="submit">添加</button>
     </form>
     <div>
-        <ul>
+        <ol>
+            {{range .}}
             <li>
-                这里是一条博客信息
+                {{.Desc}}
             </li>
-            <li>
-                这里是一条博客信息
-            </li>
-        </ul>
+            {{end}}
+        </ol>
     </div>
 </body>
 </html>

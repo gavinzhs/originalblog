@@ -20,3 +20,12 @@ func initDB() {
 }
 
 //post
+
+func listPost(session *mgo.Session) ([]*Post, error) {
+	posts := []*Post{}
+	if err := session.DB(DB).C(POST).Find(nil).All(&posts); err != nil {
+		return nil, err
+	}
+
+	return posts, nil
+}
