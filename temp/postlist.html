@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <form method="post" action="/post/create">
+        <input type="text" name="desc">
+        <input type="hidden" name="token" value="123">
+        <button type="submit">添加</button>
+    </form>
+    <form method="get" action="/post/create">
+        <input type="text" name="desc">
+        <input type="hidden" name="token" value="123">
+        <button type="submit">添加</button>
+    </form>
+    <div>
+        <ul>
+            <li>
+                这里是一条博客信息
+            </li>
+            <li>
+                这里是一条博客信息
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
